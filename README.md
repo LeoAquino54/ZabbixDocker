@@ -33,3 +33,9 @@ docker run --name zabbix-web-nginx-mysql -t -e DB_SERVER_HOST="mysql-server" -e 
 <br>
 
 docker run --name zabbix-agent --link mysql-server:mysql --link zabbix-server-mysql:zabbix-server -e ZBX_HOSTNAME="Zabbix server" -e ZBX_SERVER_HOST="zabbix-server" -d zabbix/zabbix-agent
+
+<br>
+<br> 
+
+Ou utilize o comando docker run --name zabbox-appliance -p 90:80 -p 10051:10051 -d zabbix/zabbix-appliance
+
